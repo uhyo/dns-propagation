@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html, body, main {
+  height: 100%;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+#app {
+  --grid-number: 16;
+  --grid-size: calc(95vmin / var(--grid-number));
+  display: grid;
+  grid-template-columns: repeat(var(--grid-number), var(--grid-size));
+  grid-template-rows: repeat(var(--grid-number), var(--grid-size));
+  justify-content: center;
+  align-content: center;
+
+  font-family: 'Oxanium', sans-serif;
+}
+
+#app > span {
+  text-align: center;
+  font-size: var(--grid-size);
+  line-height: 1;
+}
+
+.cell-0 {
+  font-weight: 800;
+  color: hwb(0 0% 0%);
+}
+
+.cell-1 {
+  font-weight: 680;
+  color: hwb(0 50% 5%);
+}
+
+.cell-2 {
+  font-weight: 560;
+  color: hwb(0 72% 10%);
+}
+
+.cell-3 {
+  font-weight: 440;
+  color: hwb(0 75% 10%);
+}
+
+.cell-4 {
+  font-weight: 320;
+  color: hwb(0 85% 25%);
+}
+
+.cell-5 {
+  font-weight: 200;
+  color: hwb(0 90% 30%);
+}
