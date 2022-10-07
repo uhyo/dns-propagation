@@ -15,12 +15,12 @@ async function main() {
 
   r();
 
-  // await sleep(3000);
+  await sleep(3000);
 
   setDNS(state);
   r();
 
-  await sleep(500);
+  await sleep(1500);
 
   await mainLoop(grid, state);
 
